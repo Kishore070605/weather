@@ -1,4 +1,4 @@
-function weather(event) {
+function weather(event {
     event.preventDefault()
     
     const input = document.getElementById("inputbox")
