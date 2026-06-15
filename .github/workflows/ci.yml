@@ -1,0 +1,25 @@
+name: Weather App CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  check-files:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check HTML
+        run: test -f weather.html
+
+      - name: Check JavaScript
+        run: test -f script.js
+
+      - name: Check Image
+        run: test -f weather.jpg
+
+      - name: Success
+        run: echo "Everything looks good!"
