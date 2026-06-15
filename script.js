@@ -47,7 +47,7 @@ function weather(event) {
         `
         
         console.log(input.value)
-            
-        )
+    }
+        
     }
 
