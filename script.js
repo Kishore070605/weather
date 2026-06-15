@@ -19,6 +19,7 @@ function weather(event) {
         
         
         div.innerHTML = `
+        
             <img src="https://openweathermap.org/img/wn/${icon}@2x.png">
             <table>
                 <tr>
